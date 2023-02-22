@@ -35,11 +35,11 @@ class MainView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configureUI() {
+    private func configureUI() {
         [tableView, allLoadButton].forEach { self.addSubview($0) }
     }
     
-    func setConstraints() {
+    private func setConstraints() {
         tableView.snp.makeConstraints { make in
             make.top.equalTo(self.safeAreaLayoutGuide)
             make.leading.trailing.equalToSuperview().inset(20)
