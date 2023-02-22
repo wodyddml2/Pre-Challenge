@@ -33,6 +33,7 @@ class MainTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
         configureUI()
         setConstraints()
     }
@@ -56,12 +57,13 @@ class MainTableViewCell: UITableViewCell {
         loadButton.snp.makeConstraints { make in
             make.trailing.equalToSuperview()
             make.height.equalTo(44)
+            make.width.equalTo(80)
             make.centerY.equalToSuperview()
         }
         
         progressBar.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
-            make.leading.equalTo(image.snp.trailing).offset(10)
+            make.leading.equalTo(image.snp.trailing).offset(5)
             make.trailing.equalTo(loadButton.snp.leading).offset(10)
         }
     }

@@ -12,6 +12,10 @@ class MainView: UIView {
     
     let tableView: UITableView = {
         let view = UITableView()
+        view.register(MainTableViewCell.self, forCellReuseIdentifier: "MainTableViewCell")
+        view.rowHeight = 100
+        view.allowsSelection = false
+        view.separatorStyle = .none
         return view
     }()
     
