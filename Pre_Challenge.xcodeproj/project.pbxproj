@@ -73,11 +73,27 @@
 		63E16D1929A5D76800E6008F /* MainScene */ = {
 			isa = PBXGroup;
 			children = (
-				63E16D0229A5D26600E6008F /* MainViewController.swift */,
-				63E16D1529A5D5D300E6008F /* MainView.swift */,
-				63E16D1729A5D74D00E6008F /* MainTableViewCell.swift */,
+				63E16D1A29A5EA1C00E6008F /* View */,
 			);
 			path = MainScene;
+			sourceTree = "<group>";
+		};
+		63E16D1A29A5EA1C00E6008F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63E16D1B29A5EA2C00E6008F /* Cell */,
+				63E16D0229A5D26600E6008F /* MainViewController.swift */,
+				63E16D1529A5D5D300E6008F /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63E16D1B29A5EA2C00E6008F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				63E16D1729A5D74D00E6008F /* MainTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

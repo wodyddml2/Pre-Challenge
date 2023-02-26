@@ -9,7 +9,6 @@ import UIKit
 import SnapKit
 
 class MainView: UIView {
-    
     let tableView: UITableView = {
         let view = UITableView()
         view.register(MainTableViewCell.self, forCellReuseIdentifier: "MainTableViewCell")
@@ -33,7 +32,7 @@ class MainView: UIView {
         configureUI()
         setConstraints()
     }
-    
+
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

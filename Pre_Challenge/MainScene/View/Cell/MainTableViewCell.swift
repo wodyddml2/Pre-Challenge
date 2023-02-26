@@ -9,9 +9,8 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
     
-    let image: UIImageView = {
+    let nasaImage: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(systemName: "photo")
         view.contentMode = .scaleAspectFit
         return view
     }()
@@ -44,11 +43,11 @@ class MainTableViewCell: UITableViewCell {
     }
     
     private func configureUI() {
-        [image, progressBar, loadButton].forEach  { self.addSubview($0) }
+        [nasaImage, progressBar, loadButton].forEach  { contentView.addSubview($0) }
     }
     
     private func setConstraints() {
-        image.snp.makeConstraints { make in
+        nasaImage.snp.makeConstraints { make in
             make.leading.equalToSuperview()
             make.top.bottom.equalToSuperview().inset(10)
             make.width.equalToSuperview().multipliedBy(0.4)
@@ -63,7 +62,7 @@ class MainTableViewCell: UITableViewCell {
         
         progressBar.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
-            make.leading.equalTo(image.snp.trailing).offset(5)
+            make.leading.equalTo(nasaImage.snp.trailing).offset(5)
             make.trailing.equalTo(loadButton.snp.leading).offset(10)
         }
     }
