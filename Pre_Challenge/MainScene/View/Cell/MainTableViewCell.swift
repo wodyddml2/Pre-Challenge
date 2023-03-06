@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainTableViewCell: UITableViewCell {
+final class MainTableViewCell: UITableViewCell {
     
     let nasaImage: UIImageView = {
         let view = UIImageView()
@@ -17,7 +17,6 @@ class MainTableViewCell: UITableViewCell {
     
     let progressBar: UIProgressView = {
         let view = UIProgressView()
-        view.progress = 0.5
         return view
     }()
     

@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class MainView: UIView {
+final class MainView: UIView {
     let tableView: UITableView = {
         let view = UITableView()
         view.register(MainTableViewCell.self, forCellReuseIdentifier: "MainTableViewCell")
